@@ -50,11 +50,11 @@ const html = props => console.log(props) ||
   <a href="https://www.datastack.de">Check out all our services</a>
   </div>
   <hr>
-  <p>Start searching</p>
+  <br>
+  <p><b>Total Articles in the database: ${((props || []).length || 0)}</b></p>
   <input type="text" placeholder="Enter Headline">
   <button id="likes">Sort by Likes</button>
   <button id="comments">Sorty by Comments</button>
-  <br>
   <br>
   <br>
   ${jsonToTable(props)}

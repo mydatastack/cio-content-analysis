@@ -51,6 +51,7 @@ const html = props => console.log(props) ||
   </div>
   <hr>
   <br>
+  <p>Data comes from: <a href="https://www.xing.com/news/pages/cio-de-203" target="_blank">https://www.xing.com/news/pages/cio-de-203</a></p>
   <p><b>Total Articles in the database: ${((props || []).length || 0)}</b></p>
   <input type="text" placeholder="Enter Headline">
   <button id="likes">Sort by Likes</button>

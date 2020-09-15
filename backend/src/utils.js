@@ -55,7 +55,7 @@ async function autoScroll(page){
             var distance = 100;
             var counter = 0
             var timer = setInterval(() => {
-                const max = 10000
+                const max = 50000
                 var scrollHeight = 
                 document.body.scrollHeight;
                 window.scrollBy(0, distance);

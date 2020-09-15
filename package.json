@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/mydatastack/cio-content-analysis#readme",
   "devDependencies": {
-    "playwright": "^1.4.0"
+    "es-dev-server": "^1.57.4",
+    "playwright": "^1.4.0",
+    "rollup": "^2.26.11"
   }
 }

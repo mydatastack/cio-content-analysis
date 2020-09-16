@@ -3,6 +3,7 @@ const { delay, autoScroll } = require("./utils.js")
 const fs = require("fs")
 
 const cioUrl = "https://www.xing.com/news/pages/cio-de-203"
+const mmUrl = "https://www.xing.com/news/pages/manager-magazin-93"
 
 
 const articleHeadlineSelector = "div.article__text > h3 > span"
@@ -41,7 +42,7 @@ const getComments = async page => {
 const main = async () => {
   const { page, browser } = await constructPage(true)
   console.log("go to page")
-  await page.goto(cioUrl, {
+  await page.goto(mmUrl, {
     timeout: 10000
   })
   console.log("click on consent button")
@@ -70,7 +71,7 @@ const main = async () => {
   }))
 
   console.log("saving the file")
-  fs.writeFile("../output.json", JSON.stringify(combined), (err, d) =>
+  fs.writeFile("../mm-output.json", JSON.stringify(combined), (err, d) =>
     err ? console.log(err) : console.log("file saved to output.json"))
 
   await browser.close()
